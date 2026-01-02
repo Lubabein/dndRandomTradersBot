@@ -99,7 +99,7 @@ def generate_merchants(num_merchants):
 def format_merchants(num):
     merchants = generate_merchants(num)
 
-    lines = ["🎲 Сгенерированные торговцы:", "—" * 40]
+    lines = ["🎲 Сгенерированные торговцы:", "—" * 20]
 
     for i, m in enumerate(merchants, 1):
         cat = m["Категория"]
@@ -108,7 +108,7 @@ def format_merchants(num):
 
         lines.append(f"{i:2}. {cat} | {m['Квалификация']}")
 
-    lines.append("—" * 40)
+    lines.append("—" * 20)
 
     return "\n".join(lines)
 
@@ -155,3 +155,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
