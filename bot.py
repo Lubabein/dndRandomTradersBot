@@ -128,9 +128,9 @@ def gen(update, context):
         if context.args:
             num = int(context.args[0])
         else:
-            num = 10
+            num = 16
     except:
-        num = 10
+        num = 16
 
     if num < 1:
         num = 1
@@ -155,4 +155,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
